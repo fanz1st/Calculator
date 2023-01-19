@@ -35,7 +35,7 @@ import PackageDescription
 let package = Package(
     name: "YourPackageName",
     dependencies: [
-        .package(url: "https://github.com/fanz1st/Calculator.git", from: "0.9.1")
+        .package(url: "https://github.com/fanz1st/Calculator.git")
     ],
     targets: [
         .target(
