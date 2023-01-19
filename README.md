@@ -37,21 +37,6 @@ let package = Package(
 
 ```
 
-## 💁 How to contribute
-
-If you want to contribute please see the [CONTRIBUTION GUIDE](CONTRIBUTING.md) first. 
-
-To start your project contribution run these in your command line:
-
-1. `git clone git@github.com:fanz1st/Calculator.git Calculator`
-2. `cd Calculator`
-3. `make setupEnvironment`
-
-Before commiting code please ensure to run:
-
-- `make precommit`
-
-
 
 ## 🔏 License
 
