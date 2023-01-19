@@ -8,15 +8,15 @@ import PackageDescription
 /// Otherwise we fall back to our own implementation.
 var swiftSettings: [SwiftSetting] = []
 #if canImport(simd)
-swiftSettings.append(.define("MATH_USE_SIMD"))
+swiftSettings.append(.define("Calculator_USE_SIMD"))
 #endif
 
 #if canImport(Darwin)
-swiftSettings.append(.define("MATH_DARWIN"))
+swiftSettings.append(.define("Calculator_DARWIN"))
 #elseif canImport(Glibc)
-swiftSettings.append(.define("MATH_GLIBC"))
+swiftSettings.append(.define("Calculator_GLIBC"))
 #elseif canImport(Foundation)
-swiftSettings.append(.define("MATH_FOUNDATION"))
+swiftSettings.append(.define("Calculator_FOUNDATION"))
 #endif
 
 #if os(Windows)
@@ -26,21 +26,21 @@ let libraryType : Product.Library.LibraryType = .static
 #endif
 
 let package = Package(
-    name: "Math",
+    name: "Calculator",
     products: [
         .library(
-            name: "Math",
+            name: "Calculator",
             type: libraryType,
-            targets: ["Math"])
+            targets: ["Calculator"])
     ],
     targets: [
         .target(
-            name: "Math",
+            name: "Calculator",
             dependencies: [],
             swiftSettings: swiftSettings),
         .testTarget(
-            name: "MathTests",
-            dependencies: ["Math"],
+            name: "CalculatorTests",
+            dependencies: ["Calculator"],
             swiftSettings: swiftSettings)
     ]
 )

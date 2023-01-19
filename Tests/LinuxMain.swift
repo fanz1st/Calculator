@@ -1,8 +1,8 @@
 import XCTest
 
-import MathTests
+import CalculatorTests
 
 var tests = [XCTestCaseEntry]()
-tests += MathTests.__allTests()
+tests += CalculatorTests.__allTests()
 
 XCTMain(tests)

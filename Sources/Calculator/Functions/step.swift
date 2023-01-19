@@ -1,0 +1,27 @@
+//
+//  step.swift
+//  Calculator
+//
+//  Created by Calculator on 26.08.19.
+//
+
+#if FRB_Calculator_USE_SIMD
+import func simd.step
+#endif
+
+/// Returns 0.0 if x < edge, and 1.0 otherwise.
+public func step(_ x: Double, _ edge: Double) -> Double {
+    #if FRB_Calculator_USE_SIMD
+    return simd.step(x, edge: edge)
+    #else
+    return (x < edge) ? 0 : 1
+    #endif
+}
+/// Returns 0.0 if x < edge, and 1.0 otherwise.
+public func step(_ x: Float, _ edge: Float) -> Float {
+    #if FRB_Calculator_USE_SIMD
+    return simd.step(x, edge: edge)
+    #else
+    return (x < edge) ? 0 : 1
+    #endif
+}
