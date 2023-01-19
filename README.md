@@ -1,14 +1,5 @@
 # Calculator
 
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-[![macOS](https://github.com/fireblade-engine/Calculator/actions/workflows/ci-macos.yml/badge.svg)](https://github.com/fireblade-engine/Calculator/actions/workflows/ci-macos.yml)
-[![Linux](https://github.com/fireblade-engine/Calculator/actions/workflows/ci-linux.yml/badge.svg)](https://github.com/fireblade-engine/Calculator/actions/workflows/ci-linux.yml)
-[![Windows](https://github.com/fireblade-engine/Calculator/actions/workflows/ci-windows.yml/badge.svg)](https://github.com/fireblade-engine/Calculator/actions/workflows/ci-windows.yml)
-[![swift-version-compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ffireblade-engine%2FCalculator%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/fireblade-engine/Calculator) 
-[![platform-compatilibilty](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ffireblade-engine%2FCalculator%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/fireblade-engine/Calculator) 
-<!--[![platform-webassembly](https://img.shields.io/badge/Platform-WebAssembly-blue.svg)](https://github.com/swiftwasm/swift#swiftwasm)-->
-
-
 A dependency free, lightweight, fast Calculator library for 2D and 3D vectors, quaternions and matrices in Swift with (optional) SIMD support.  
 
 ## 🚀 Getting Started
